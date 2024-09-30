@@ -3,7 +3,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/my-notes/:path*",
+        source: "/:path*",
         destination:
           "https://publish.obsidian.md/serve?url=blog.igsr5.dev/:path*",
       },
