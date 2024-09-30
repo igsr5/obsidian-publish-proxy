@@ -1,11 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/my-notes",
+      "source": "/",
       "destination": "https://publish.obsidian.md/serve?url=blog.igsr5.dev"
     },
     {
-      "source": "/my-notes/:path*",
+      "source": "/:path*",
       "destination": "https://publish.obsidian.md/serve?url=blog.igsr5.dev/:path*"
     }
   ]
