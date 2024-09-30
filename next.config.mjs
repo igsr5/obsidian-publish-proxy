@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
-    return [
-      {
-        source: "/:path*",
-        destination:
-          "https://publish.obsidian.md/serve?url=blog.igsr5.dev/:path*",
-      },
-    ];
+    return {
+      beforeFiles: [
+        {
+          source: "/:path*",
+          destination:
+            "https://publish.obsidian.md/serve?url=blog.igsr5.dev/:path*",
+        },
+      ],
+    };
   },
 };
 
